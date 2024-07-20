@@ -6,7 +6,7 @@ import SidebarHeader from './SidebarHeader.tsx';
 import SidebarItems from './SidebarItems.tsx';
 
 const Sidebar = () => {
-  const { sidebarToggle, setSidebarToggle } = useStore();
+  const { sidebarToggle } = useStore();
   return (
     <aside
       className={`sidebar-wrapper ${sidebarToggle ? 'sidebar-shrink' : ''}`}
