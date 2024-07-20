@@ -21,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   children,
 }) => {
   const className = `btn ${variant} ${rounded} ${size} ${icon ? 'icon' : ''}`;
+
   if (href && href !== '#') {
     return (
       <a href={href} className={className}>

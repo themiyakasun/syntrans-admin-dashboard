@@ -8,6 +8,7 @@
  text-align: center;
  vertical-align: middle;
  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ width: 100%;
 }
 
 a {
@@ -24,6 +25,18 @@ a {
 }
 
 /* Background Colors */
+.none {
+ color: #fff;
+ background-color: transparent;
+ border: none;
+}
+
+.none:hover {
+ color: #fff;
+ background-color: rgb(255 255 255 / 14%);
+ border-color: rgb(255 255 255 / 0.24);
+}
+
 .transparent {
  border: 1px solid transparent;
  color: #fff;
@@ -87,6 +100,11 @@ a {
  line-height: 1.5 !important;
 }
 
+.md {
+ font-size: 1rem !important;
+ line-height: 1.5 !important;
+}
+
 .sm {
  padding: 0.25rem 0.5rem !important;
  font-size: 0.875rem !important;
@@ -94,7 +112,7 @@ a {
 }
 
 /* Icon */
-.btn {
+.btn.icon {
  display: flex;
  align-items: center;
  gap: 10px;

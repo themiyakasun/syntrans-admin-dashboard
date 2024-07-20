@@ -1,0 +1,95 @@
+.sidebar-wrapper {
+ width: 260px;
+ height: calc(100% - 70px);
+ position: fixed;
+ top: 70px;
+ left: 0;
+ bottom: 0;
+ z-index: 16;
+ background: rgb(0 0 0 / 24%);
+ border-right: 1px solid rgb(255 255 255 / 14%);
+ box-shadow: none;
+ transition: all .2s ease-out;
+}
+
+
+.sidebar-header {
+ width: 260px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ display: flex;
+ align-items: center;
+ padding: 0px 0px 0px 15px;
+ height: 70px;
+ background: rgb(0 0 0 / 24%);
+ border-right: 1px solid rgb(255 255 255 / 14%);
+ border-bottom: 1px solid rgb(255 255 255 / 14%);
+ z-index: 1;
+ transition: all .2s ease-out;
+ display: flex;
+ align-items: center;
+}
+
+
+.sidebar-logo {
+ width: 35px;
+ margin-left: 10px;
+}
+
+.logo-text {
+ color: #ffffff;
+ font-size: 25px;
+ margin-bottom: 0;
+ margin-left: 10px;
+}
+
+.sidebar-toggle {
+ margin-left: auto;
+}
+
+.sidebar-toggle button:hover {
+ background-color: transparent !important;
+ border-color: none !important;
+
+}
+
+.sidebar-items {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+}
+
+.sidebar-item {
+ margin-top: 5px;
+}
+
+
+/* Sidebar Toggle */
+
+.sidebar-header.sidebar-shrink,
+.sidebar-wrapper.sidebar-shrink {
+ width: 80px;
+}
+
+.sidebar-wrapper.sidebar-shrink .logo-text,
+.sidebar-wrapper.sidebar-shrink .sidebar-toggle,
+.sidebar-wrapper.sidebar-shrink .sidebar-link {
+ display: none;
+}
+
+.sidebar-wrapper:hover {
+ width: 260px !important;
+}
+
+.sidebar-wrapper:hover .sidebar-header {
+ width: 260px !important;
+}
+
+.sidebar-wrapper:hover .logo-text,
+.sidebar-wrapper:hover .sidebar-toggle,
+.sidebar-wrapper:hover .sidebar-link {
+ display: block !important;
+}

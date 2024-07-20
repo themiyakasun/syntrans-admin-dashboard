@@ -1,15 +1,20 @@
 import React from 'react';
-import Button from './components/ui/Buttons/Button.tsx';
-import { RiHeartFill } from '@remixicon/react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Layout from './components/ui/Layout/Layout.tsx';
+import Dashbord from './pages/Dashbord.tsx';
+import Sidebar from './components/shared/sidebar/Sidebar.tsx';
 
 const App = () => {
   return (
-    <div style={{ backgroundColor: '#000' }}>
-      <Button variant='secondary' icon={true}>
-        <RiHeartFill size={24} />
-        Text
-      </Button>
-    </div>
+    <Router>
+      <Layout>
+        <Sidebar />
+        <Routes>
+          <Route path='/dashboard' element={<Dashbord />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 };
 
