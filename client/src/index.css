@@ -12,3 +12,57 @@ body {
  font-weight: 400;
  font-style: normal;
 }
+
+.row {
+ display: flex;
+ flex-wrap: wrap;
+ margin-right: -15px;
+ margin-left: -15px;
+}
+
+.no-gutters {
+ margin-right: 0;
+ margin-left: 0;
+}
+
+
+.col-12 {
+ -ms-flex: 0 0 100%;
+ flex: 0 0 100%;
+ max-width: 100%;
+}
+
+.col-lg-10,
+.col-12,
+.col-lg-6 {
+ position: relative;
+ width: 100%;
+ padding-right: 15px;
+ padding-left: 15px;
+
+}
+
+.no-gutters .col-lg-6 {
+ padding-left: 0;
+ padding-right: 0;
+}
+
+@media (min-width: 992px) {
+ .col-lg-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+
+ }
+
+ .col-lg-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+ }
+}
+
+.auth-page {
+ height: 100vh;
+ overflow: hidden;
+}

@@ -1,0 +1,153 @@
+@-webkit-keyframes animdropdown {
+
+ from {
+
+  -webkit-transform: translate3d(0, 6px, 0);
+
+  transform: translate3d(0, 6px, 0);
+
+  opacity: 0
+ }
+
+ to {
+
+  -webkit-transform: translate3d(0, 0, 0);
+
+  transform: translate3d(0, 0, 0);
+
+  opacity: 1
+ }
+
+}
+
+@keyframes animdropdown {
+ from {
+
+  -webkit-transform: translate3d(0, 6px, 0);
+
+  transform: translate3d(0, 6px, 0);
+
+  opacity: 0
+ }
+
+ to {
+
+  -webkit-transform: translate3d(0, 0, 0);
+
+  transform: translate3d(0, 0, 0);
+
+  opacity: 1
+ }
+
+}
+
+.dropdown-menu {
+ position: absolute;
+ width: 380px;
+ padding: 0px;
+ margin: 0;
+ border: 0;
+ box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+ line-height: initial;
+ margin: 0;
+ font-size: 14px;
+ border-radius: 15px;
+ right: 0;
+ left: auto;
+ top: 100%;
+ z-index: 1000;
+ min-width: 10rem;
+ color: rgb(255 255 255 / 68%);
+ text-align: left;
+ list-style: none;
+ background-color: #191a21;
+ background-clip: padding-box;
+ animation: .6s cubic-bezier(.25, .8, .25, 1) 0s normal forwards 1 animdropdown;
+ display: none;
+}
+
+.dropdown-menu.show {
+ display: block;
+}
+
+.dropdown-menu::after {
+ content: '';
+ width: 13px;
+ height: 13px;
+ background: #101116;
+ position: absolute;
+ top: -6px;
+ right: 28px;
+ transform: rotate(45deg);
+ border-top: 1px solid #101116;
+ border-left: 1px solid #101116;
+
+}
+
+.msg-header {
+ padding: .72rem 1.2rem;
+ color: #fff;
+ border-bottom: 1px solid rgb(255 255 255 / 15%);
+ background: #101116;
+ text-align: center;
+ border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
+}
+
+.msg-header-title {
+ font-size: 22px;
+ margin-bottom: 0;
+}
+
+.msg-header-subtitle {
+ font-size: 14px;
+ margin-bottom: 0;
+}
+
+.header-message-list {
+ position: relative;
+ height: 420px;
+ overflow: hidden !important;
+ overflow-anchor: none;
+ -ms-overflow-style: none;
+ touch-action: auto;
+}
+
+.header-message-link {
+ padding: .72rem 1.2rem;
+ border-bottom: 1px solid rgb(255 255 255 / 0.12);
+ display: block;
+ width: 100%;
+ clear: both;
+ font-weight: 400;
+ color: rgb(255 255 255 / 75%);
+ text-align: inherit;
+ white-space: nowrap;
+ background-color: transparent;
+ border: 0;
+ text-decoration: none;
+}
+
+.media {
+ display: flex;
+ align-items: center;
+}
+
+.user-online img {
+ width: 45px;
+ height: 45px;
+ border-radius: 50%;
+ margin-right: 15px;
+}
+
+.msg-name {
+ font-size: 14px;
+ margin-bottom: 0;
+ color: #fff;
+}
+
+.msg-info {
+ font-size: 13px;
+ margin-bottom: 0;
+
+}
